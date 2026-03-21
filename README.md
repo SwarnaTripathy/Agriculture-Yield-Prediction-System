@@ -36,4 +36,16 @@ The objective of this project is to:
 - Performance optimization using clustering and micro-partition pruning  
 - Secure data access using RBAC and data masking policies  
 - Interactive Power BI dashboard for visualization and insights  
-- Analysis of yield trends based on crop, location, and weather conditions  
+- Analysis of yield trends based on crop, location, and weather conditions
+
+## Tools & Technologies Used  
+
+| Technology       | Category           | Purpose                                      |
+|------------------|--------------------|----------------------------------------------|
+| Python (Pandas)  | Data Processing    | Data cleaning and preprocessing              |
+| Apache Spark     | Big Data           | Distributed data processing (PySpark)        |
+| Snowflake        | Data Warehouse     | Scalable storage and ELT operations          |
+| SQL              | Query Language     | Data transformation and analytics            |
+| Power BI         | Visualization      | Dashboard and reporting                      |
+| Jupyter Notebook | Development Tool   | Pipeline development and testing             |
+| CSV / Excel      | Data Source        | Input datasets                               | 

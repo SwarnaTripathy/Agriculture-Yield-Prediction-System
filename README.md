@@ -49,3 +49,52 @@ The objective of this project is to:
 | Power BI         | Visualization      | Dashboard and reporting                      |
 | Jupyter Notebook | Development Tool   | Pipeline development and testing             |
 | CSV / Excel      | Data Source        | Input datasets                               | 
+
+## Project Implementation  
+
+The project follows a structured and layered approach to process and analyze agricultural data efficiently:
+
+### 1. Data Ingestion  
+Raw agricultural data in CSV format is collected and loaded into the Snowflake **RAW_DATA** schema.  
+This layer stores unprocessed data to maintain source integrity and enable traceability.
+
+### 2. Data Cleaning & Preprocessing  
+Python (Pandas) is used to clean and preprocess the data by handling missing values, removing unwanted columns, and standardizing column names.  
+The cleaned data is then prepared for further transformation.
+
+### 3. Data Transformation (STAGING Layer)  
+Data is transformed using SQL within Snowflake in the **STAGING** layer.  
+This includes type conversion, feature engineering, and preparing structured datasets for analytical use.
+
+### 4. Data Warehouse Design  
+A **Star Schema** is implemented in the **WAREHOUSE** layer with:  
+- FACT_CROP_YIELD (central fact table)  
+- DIM_CROP, DIM_LOCATION, DIM_WEATHER (dimension tables)  
+
+This design ensures efficient querying and analytical performance.
+
+### 5. Data Loading  
+Processed data is loaded into dimension and fact tables using surrogate keys and structured joins.  
+Data integrity and consistency are validated during the loading process.
+
+### 6. Advanced Analytics  
+SQL queries using CTEs, Window Functions, and aggregations are applied to perform:  
+- Year-over-Year analysis  
+- Ranking and trend analysis  
+- Crop and region-based performance evaluation  
+
+### 7. Performance Optimization  
+Clustering is applied on frequently used columns such as **Year and Crop_ID** to improve query performance.  
+Micro-partition pruning and query tuning are used to reduce data scan and execution time.
+
+### 8. Visualization  
+An interactive dashboard is created using Power BI to visualize key insights such as yield trends, crop distribution, and weather impact.  
+Filters and slicers are added for dynamic analysis.
+
+### 9. Security Implementation  
+Data security is ensured using:  
+- Role-Based Access Control (RBAC)  
+- Dynamic Data Masking  
+- Row-Level Security policies  
+
+This ensures controlled and secure access to data.

@@ -88,8 +88,14 @@ Clustering is applied on frequently used columns such as **Year and Crop_ID** to
 Micro-partition pruning and query tuning are used to reduce data scan and execution time.
 
 ### 8. Visualization  
-An interactive dashboard is created using Power BI to visualize key insights such as yield trends, crop distribution, and weather impact.  
-Filters and slicers are added for dynamic analysis.
+The processed data is connected to **Power BI** for visualization and reporting.  
+An interactive dashboard is created featuring:  
+- KPI Cards (Total Yield, Rainfall, Temperature, Pesticides)  
+- Line chart for Yield Trends over Years  
+- Bar chart for Yield by Area/Region  
+- Pie chart for Crop-wise distribution  
+- Scatter plots for Weather vs Yield analysis  
+- Slicers for dynamic filtering (Year, Crop, Location)
 
 ### 9. Security Implementation  
 Data security is ensured using:  

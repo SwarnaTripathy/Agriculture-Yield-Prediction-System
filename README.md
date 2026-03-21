@@ -104,3 +104,10 @@ Data security is ensured using:
 - Row-Level Security policies  
 
 This ensures controlled and secure access to data.
+
+
+## To Run the Project
+### 
+ETL Script
+
+python agriculture_etl_pipeline.py

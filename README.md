@@ -25,7 +25,7 @@ The objective of this project is to:
 - Optimize performance using Snowflake techniques (clustering, pruning)  
 - Implement secure data access using RBAC and data masking  
 - Visualize insights using Power BI dashboards
-- 
+  
 ## Key Features  
 
 - End-to-end data engineering pipeline (RAW → STAGING → WAREHOUSE)  

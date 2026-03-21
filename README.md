@@ -1,6 +1,6 @@
 # Agriculture-Yield-Prediction-System
-🌾 Agriculture Yield Prediction System
-📌 Project Overview
+
+#📌 Project Overview
 
 This project focuses on analyzing and predicting agricultural yield using data-driven techniques. It integrates multiple factors such as crop type, weather conditions, rainfall, and pesticide usage to generate meaningful insights and support decision-making.
 
